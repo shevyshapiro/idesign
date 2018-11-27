@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>iDesign | Building Brands for Success</title>
+	<link href="https://d1615xvjt23y87.cloudfront.net/assets/css/jquery.fullPage.css" rel="stylesheet" type="text/css" />
+	<link href="https://d1615xvjt23y87.cloudfront.net/assets/css/animate.css" rel="stylesheet" type="text/css" />
+	<link href="assets/css/fonts.css?v=1" rel="stylesheet" type="text/css" />
+	<link href="https://d1615xvjt23y87.cloudfront.net/assets/css/styles.css?v=7" rel="stylesheet" type="text/css" />
+	<link href="https://d1615xvjt23y87.cloudfront.net/assets/css/main.css" rel="stylesheet" type="text/css" />
+	<link href="https://d1615xvjt23y87.cloudfront.net/assets/css/menu.css?v=1" rel="stylesheet" type="text/css" />
+	<link href="https://d1615xvjt23y87.cloudfront.net/assets/css/forms.css?v=1" rel="stylesheet" type="text/css" /><!--[if IE]>
+        <script type="text/javascript">
+             var console = { log: function() {} };
+        </script>
+    <![endif]-->
+
+    <link rel="shortcut icon" href="https://d1615xvjt23y87.cloudfront.net/assets/images/favicon-i.png" type="image/x-icon" />
+    <link rel="apple-touch-icon" href="https://d1615xvjt23y87.cloudfront.net/assets/images/favicon-i.png">
+
+	<style type="text/css">
+	.navigation-arrow { max-width: 100px; }
+	/*.sub-menu-handler:hover .sub-menu-wrap{display: block !important;}*/
+	</style>
+	<!--[if IE]>
+	<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+	<![endif]-->
+
+	<!-- remove this if you use Modernizr -->
+	<script>(function(e,t,n){var r=e.querySelectorAll("html")[0];r.className=r.className.replace(/(^|\s)no-js(\s|$)/,"$1js$2")})(document,window,0);</script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-122108401-1"></script>
+	<script>
+	  window.dataLayer = window.dataLayer || [];
+	  function gtag(){dataLayer.push(arguments);}
+	  gtag('js', new Date());
+
+	  gtag('config', 'UA-122108401-1');
+	</script>
+</head>
+<body>
+<!-- MENU ICON -->
+
+<table class="menu" onclick="openNav()">
+	<tbody>
+		<tr>
+			<td id="menuText">
+			<div class="menuText">MENU</div>
+			</td>
+			<td>
+			<div class="menuBar"></div>
+
+			<div class="menuBar"></div>
+
+			<div class="menuBar"></div>
+			</td>
+		</tr>
+	</tbody>
+</table>
+<!-- PUT YOUR MENU TAGS AND THEIR LINKS HERE-->
+<div id="sideBar" class="sidebar" style="width: 0px;">
+  <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+  <a href="index.html" data-href-slide-number="1">Home</a>
+  <a href="about-us.html" >About</a>
+  <a href="work.html">Portfolio</a>
+  <a href="index.html#services" data-href-slide-number="6">Services</a>
+  <a href="careers.html">Careers</a>
+  <a href="contact.html">Contact Us</a>
+</div>
+
+<div id="fullpage">
+	<!--PAGE 1 STARTS-->
+	<div class="section active" id="section0">
+		<div class="career-overlay header-overlay"></div>
+		<a href="index.html"><img class="side-logo" src="https://d1615xvjt23y87.cloudfront.net/assets/images/side-logo-white.png" alt="iDesign logo" /></a>
+		<h4 class="intro-head-text">READY TO START?</h4>
+		<h5 class="intro-head-sub-text">Get in touch with iDesign <span class="nobr">and let success happen</span></h5>
+		<h4 class="footer"><a href='tel:7323632229'>732.363.2229</a></h4>
+		<h4 class="footer"><a href='mailto:hello@weareidesign.com'>hello@weareidesign.com</a></h4>
+		<form class="form">
+			<input type=hidden value="contact_us_form" name="action" />
+			<span class='form-input-span'><input type="text" name="name" class="form-input" placeholder="Name"/></span>
+			<span class='form-input-span'><input type="email" name="email" class="form-input" placeholder="Email"/></span>
+			<span class='form-input-span'><input type="phone" name="phone" class="form-input" placeholder="Phone"/></span>
+			<span class='form-input-span'><textarea name="message" class="form-input" rows="4" placeholder="Message"></textarea></span>
+			<div class="submit-wrapper">
+				<a href=# id="submit-form" class="btn">SEND</a>
+			</div>
+		</form>
+	</div>
+	<!--PAGE 1 ENDS-->
+</div>
+
+<script type="text/javascript" src="https://d1615xvjt23y87.cloudfront.net/assets/js/jQuery-1.8.3.js"></script>
+<script type="text/javascript" src="https://d1615xvjt23y87.cloudfront.net/assets/js/jquery.fullPage.js"></script>
+<script type="text/javascript" src="https://d1615xvjt23y87.cloudfront.net/assets/js/menu.js?v=1"></script>
+<script type="text/javascript" src="https://d1615xvjt23y87.cloudfront.net/assets/js/jquery.custom-file-input.js"></script>
+
+<script type="text/javascript">
+    $(document).ready(function() {
+        $('#fullpage').fullpage({
+          anchors: ['page1'],
+          menu: '.menu',
+          onLeave: function(index, nextIndex, direction){
+          	// if(nextIndex != 2 && nextIndex != 4){
+          	if(nextIndex != 4){
+				$(".menuText").addClass("darkMenuText");
+				$(".menuBar").addClass("darkMenuBar");
+			}
+			else{
+				$(".darkMenuText").removeClass("darkMenuText");
+				$(".darkMenuBar").removeClass("darkMenuBar");
+			}
+			if(nextIndex != 1){
+				$(".menuText").hide();
+			}
+			else{
+				$(".menuText").show();
+			}
+			$(".menu").hide();
+		  },
+		  afterLoad: function(anchorLink, index){if(document.getElementById("sideBar").style.width != "280px"){ $(".menu").show(); }}
+        });
+		$("body").on("contextmenu",function(e){
+	       //return false;
+	    });
+		 
+		$("#submit-form").click(function(e){
+			e.preventDefault(); // avoid to execute the actual submit of the form.
+			if($("input[name=email]").val()==''){
+				 alert("Please enter an email.");
+				 return;
+			}
+				$(".submit-wrapper").html("Sending...");
+			var url = "ajax/process.php"; 
+		   $.ajax({
+			  type: "POST",
+			  url: url,
+			   data: $("form.form").serialize(), // serializes the form's elements.
+			  success: function(data)
+			 {
+				$(".submit-wrapper").html("Thank you for your submission!");
+			 }
+		   });
+		});
+    });
+
+</script></body>
+</html>

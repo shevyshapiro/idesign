@@ -1,0 +1,44 @@
+Options +FollowSymLinks
+# Check for files with the listed extensions
+<filesMatch ".(css|jpg|png|gif|js|woff|mp4)">
+# If a file with any of the above extensions are found, set the maximum age for the asset in seconds
+Header set Cache-Control "max-age=604800, public"
+</filesMatch>
+# Apache config
+<FilesMatch ".(eot|ttf|otf|woff)">
+	Header set Access-Control-Allow-Origin "*"
+</FilesMatch>
+
+<IfModule mod_headers.c>
+  <FilesMatch "\.(ttf|ttc|otf|eot|woff|woff2|font.css|css|js)$">
+    Header set Access-Control-Allow-Origin "*"
+  </FilesMatch>
+</IfModule>
+
+AddType video/mp4 .mp4
+
+RewriteEngine On
+#RewriteCond %{HTTP_HOST} ^idesignmg.com [NC,OR]
+#RewriteCond %{HTTP_HOST} ^www.idesignmg.com [NC]
+#RewriteCond %{HTTP_HOST} ^weridesign.com [NC,OR]
+#RewriteCond %{HTTP_HOST} ^www.weridesign.com [NC]
+
+RewriteCond %{SERVER_PORT} 80 
+RewriteRule ^(.*)$ https://weareidesign.com/$1 [R=301,L]
+
+RewriteCond %{HTTP_HOST} ^www.weareidesign.com [NC]
+RewriteRule ^(.*)$ https://weareidesign.com/ [L,R=301,NC]
+
+RewriteCond %{HTTP_HOST} ^weridesign.com [NC]
+RewriteRule ^(.*)$ https://weareidesign.com/ [L,R=301,NC]
+
+RewriteCond %{HTTP_HOST} ^www.weridesign.com [NC]
+RewriteRule ^(.*)$ https://weareidesign.com/ [L,R=301,NC]
+
+RewriteCond %{HTTP_HOST} ^idesignmg.com [NC]
+RewriteRule ^(.*)$ https://weareidesign.com/ [L,R=301,NC]
+
+RewriteCond %{HTTP_HOST} ^www.idesignmg.com [NC]
+RewriteRule ^(.*)$ https://weareidesign.com/ [L,R=301,NC]
+
+#RedirectMatch  /assets/(.*)$ https://d1615xvjt23y87.cloudfront.net/assets/$1

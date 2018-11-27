@@ -1,0 +1,294 @@
+@CHARSET "ISO-8859-1";
+/* PAGE 1 STYLING*/
+
+#section0{
+	background-color: #fff;
+}
+.page1-overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	background-image: url('../images/w1360/cedar/back-1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right top;
+}
+.left-content{
+	position: absolute;
+	top: 0;
+	left: 0;
+	bottom: 0;
+	max-width: 450px;
+	width: 100%;
+	text-align: left;
+	background: rgba(16, 19, 31, 0.5)
+}
+.left-content h2{
+	position: absolute;
+	top: 50%;
+	left: 65px;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	-o-transform: translateY(-50%);
+	transform: translateY(-50%);
+	font-family: 'AvenirNext-Regular', Helvetica;
+	color: #fff;
+	font-size: 50px;
+	letter-spacing: 5px;
+	line-height: 1.7;
+	text-transform: uppercase;
+}
+.left-content br{
+	display: none;
+}
+/*ENDS*/
+
+/* PAGE 2 STYLING*/
+
+#section1{
+	background-color: #fff;
+}
+
+.bottom-image-splitted img{
+	max-width: 250px;
+}
+/*ENDS*/
+
+/* PAGE 3 STYLING*/
+#section2{
+	background-color: #919ba1;
+}
+.page3-overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	background-image: url('../images/w1360/cedar/back-3.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+/*ENDS*/
+
+/* PAGE 4 STYLING*/
+#section3{
+	background-color: #fff;
+}
+.page4-overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	background-image: url('../images/w1360/cedar/back-4.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right;
+}
+/*ENDS*/
+
+/* PAGE 5 STYLING*/
+#section4{
+	background-color: #fff;
+}
+.page5-overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	background-image: url('../images/w1360/cedar/back-5.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+/*ENDS*/
+
+/* PAGE 6 STYLING*/
+#section5{
+	background-color: #fff;
+}
+.page6-overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	background-image: url('../images/w1360/cedar/back-6.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+/*ENDS*/
+
+
+/* PAGE 7 STYLING*/
+#section6{
+	background-color: #fff;
+}
+.page7-overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	background-image: url('../images/w1360/cedar/back-7.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+/*New Styling Start Here
+==============================*/
+/*ENDS*/
+
+
+/* PAGE 8 STYLING*/
+#section7{
+	background-color: #fff;
+}
+.page8-overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	background-image: url('../images/w1360/cedar/back-8.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+/*ENDS*/
+
+
+/*Responsive Designing*/
+
+@media screen and (min-width:3201px){
+	
+}
+@media screen and (min-width:1600px) and (max-width:3200px){
+	
+}
+/* The general Design refers to the resolution of 1024px to 1599px */
+
+@media screen and (min-width:1024px) and (max-width:1359px){
+	
+}
+@media screen and (min-width:768px) and (max-width:1023px){
+	
+}
+
+@media screen and (min-width:480px) and (max-width:767px){
+	
+}
+
+@media screen and (min-width:360px) and (max-width:479px){
+	
+}
+@media screen and (max-width:359px){
+	
+}
+/*New Styling Start Here
+==============================*/
+@media (max-width: 1199px) {
+	.left-content{
+		max-width: 350px;
+	}
+	.left-content h2{
+		font-size: 38px;
+		left: 30px;
+	}
+}
+@media (max-width: 1023px) {
+    .page1-overlay{
+    	background-position: 82% 0;
+    }
+    .page4-overlay{
+		background-position: center;
+    }
+    .page6-overlay{
+    	background-position: 62% 0;
+    }
+    .page8-overlay{
+    	background-position: 58% 0;
+    }
+}
+@media (max-width: 780px) {
+	.page8-overlay{
+		background-position: center;
+	}
+	.left-content{
+		display: none;
+	}
+	.page1-overlay{
+		background-image: url(../images/w1360/cedar/back-1-sm.png);
+	}
+	.page4-overlay{
+    	background-image: url(../images/w1360/cedar/back-4-sm.jpg);
+    }
+    .page5-overlay{
+    	background-image: url(../images/w1360/cedar/back-5-sm.jpg);
+    }
+    .page7-overlay{
+    	background-image: url(../images/w1360/cedar/back-7-sm.jpg) ;
+    }
+    .page8-overlay{
+    	background-image: url(../images/w1360/cedar/back-8-sm.jpg) ;
+    }
+}
+@media (max-width: 559px) {
+	
+}
+@media (max-width: 479px) {
+	.left-content h2{
+		font-size: 24px;
+	}
+}
+@media (max-height: 415px) {
+	.left-content{
+		display: block;
+		background: rgba(16, 19, 31, 0.5);
+		top: 0;
+		bottom: 0;
+		max-width: 260px;
+	}
+	.left-content h2{
+		position: absolute;
+		left: 50%;
+		top: 50%;
+		max-width: 230px;
+		width: 100%;
+		-webkit-transform: translate(-50%,-50%);
+		-ms-transform: translate(-50%,-50%);
+		-o-transform: translate(-50%,-50%);
+		transform: translate(-50%,-50%);
+		font-size: 20px;
+	}
+	.page6-overlay{
+		background-size: cover;
+	}
+	.page1-overlay{
+    	background: url(../images/w1360/cedar/back-1.jpg) no-repeat center top / cover;
+    }
+	.page4-overlay{
+    	background: url(../images/w1360/cedar/back-4.jpg) no-repeat center top / cover;
+    }
+    .page5-overlay{
+    	background: url(../images/w1360/cedar/back-5.jpg) no-repeat center top / cover;
+    }
+    .page7-overlay{
+    	background: url(../images/w1360/cedar/back-7.jpg) no-repeat center top / cover;
+    }
+    .page8-overlay{
+    	background: url(../images/w1360/cedar/back-8.jpg) no-repeat center top / cover;
+    }
+}

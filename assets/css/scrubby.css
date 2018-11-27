@@ -1,0 +1,283 @@
+@CHARSET "ISO-8859-1";
+
+/* PAGE 1 STYLING*/
+
+#section0{
+	background-color: #fff;
+}
+.page1-overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	background-image: url('../images/w1360/scrubby/back-1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+/*ENDS*/
+
+/* PAGE 2 STYLING*/
+
+#section1{
+	background-color: #fff;
+}
+/*ENDS*/
+
+/* PAGE 3 STYLING*/
+#section2{
+	background-color: #89d9f2;
+}
+.page3-overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	background-image: url('../images/w1360/scrubby/back-3.png');
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center;
+}
+/*ENDS*/
+
+/* PAGE 4 STYLING*/
+
+#section3{
+	background-color: #fff;
+}
+.page4-overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	background-image: url('../images/w1360/scrubby/back-4.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+/*ENDS*/
+
+/* PAGE 5 STYLING*/
+#section4{
+	background-color: #fff;
+}
+.page5-overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	background-image: url('../images/w1360/scrubby/back-5.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center top;
+}
+/*ENDS*/
+
+/* PAGE 6 STYLING*/
+#section5{
+	background-color: #fff;
+}
+.page6-overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	background-image: url('../images/w1360/scrubby/back-6.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+/*ENDS*/
+
+
+/* PAGE 7 STYLING*/
+#section6{
+	background-color: #fff;
+}
+.page7-overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	background-image: url('../images/w1360/scrubby/back-7.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: right top;
+}
+/*ENDS*/
+
+
+/* PAGE 8 STYLING*/
+#section7{
+	background-color: #fff;
+}
+.page8-overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	background-image: url('../images/w1360/scrubby/back-8.jpg');
+	background-repeat: no-repeat;
+	background-size: auto 100%;
+	background-position: center;
+}
+/*ENDS*/
+
+/* PAGE 8 STYLING*/
+#section8{
+	background-color: #fff;
+}
+.page9-overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	background-image: url('../images/w1360/scrubby/back-9.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+
+/* PAGE 10 STYLING*/
+#section10{
+	background-color: #89d9f2;
+}
+.page11-overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	background-image: url('../images/w1360/scrubby/back-10.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+}
+
+/* PAGE 11 STYLING*/
+#section11{
+	background-color: #89d9f2;
+}
+.page12-overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	background-image: url('../images/w1360/scrubby/back-12.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+/*ENDS*/
+
+/*Responsive Designing*/
+
+@media screen and (min-width:3201px){
+	
+}
+@media screen and (min-width:1600px) and (max-width:3200px){
+	
+}
+/* The general Design refers to the resolution of 19024px to 1599px */
+
+@media screen and (min-width:1024px) and (max-width:1559px) {
+	.page1-overlay{
+		background: url(../images/w1360/scrubby/back-1-sm1.jpg) no-repeat center top / auto 100%;
+		background-position: 70% 0;
+	}
+	
+}
+
+@media screen and (min-width:768px) and (max-width:1023px){
+	
+}
+
+@media screen and (min-width:480px) and (max-width:767px){
+	
+}
+
+@media screen and (min-width:360px) and (max-width:479px){
+	
+}
+
+@media screen and (max-width:359px){
+	
+}
+
+/*New Styling Start Here
+==============================*/
+@media (max-width: 1023px) {
+	.page1-overlay{
+		background: url(../images/w1360/scrubby/back-1-sm1.jpg) no-repeat center top / auto 100%;
+		background-position: 70% 0;
+	}
+	
+	.page7-overlay{
+	  	background-position: 81% 0;
+	}
+}
+@media (max-width: 900px) {
+	.page1-overlay{
+		background-position: 65% 0;
+	}
+	.page9-overlay{
+		background-image:url(../images/w1360/scrubby/back-9-sm.jpg);
+		background-position: 70% 0;
+	}
+	.page6-overlay{
+		background: url(../images/w1360/scrubby/back-6-sm.jpg) no-repeat center top / cover;
+	}
+}
+@media (max-width: 780px) {
+	.page9-overlay{
+		background-position: 65% 0;
+	}
+	.page12-overlay{
+		background-image: url(../images/w1360/scrubby/back-12-sm.png);
+     background-position: 30%;
+	}
+}
+@media (max-width: 559px) {
+	.page4-overlay{
+		background-position: 55% 0;
+	}
+	.page7-overlay{
+	  	background-position: 90% 0;
+	}
+}
+@media (max-width: 479px) {
+	.page1-overlay{
+		background-position: 67% 0;
+	}
+}
+@media (max-height: 415px) {
+	.page1-overlay{
+		background-size: cover;
+	}
+	.page6-overlay{
+		background: url(../images/w1360/scrubby/back-6.jpg) no-repeat center top / cover;
+	}
+	.page9-overlay{
+		background: url(../images/w1360/scrubby/back-9.jpg) no-repeat right top / cover;
+	}
+}

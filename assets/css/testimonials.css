@@ -1,0 +1,108 @@
+.prev-project-arrow {
+	transform: rotate(-225deg);
+    -webkit-transform: rotate(-225deg);
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+    vertical-align: middle;
+}
+.prev-project {
+    position: absolute;
+    left: 30px;
+    font-size: 18px;
+    color: #fff;
+    bottom: 70px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.next-project-arrow {
+	transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    border: solid #fff;
+    border-width: 0 3px 3px 0;
+    display: inline-block;
+    padding: 10px;
+    vertical-align: middle;
+}
+.next-project {
+    position: absolute;
+    right: 30px;
+    font-size: 18px;
+    color: #fff;
+    bottom: 70px;
+    vertical-align: middle;
+    cursor: pointer;
+}
+.center-icon{
+	margin: auto;
+	width: 70px; 
+	min-width: 50px; 
+	max-width: 150px;
+    position: absolute;
+    bottom: 30px;
+}
+.testimonial-overlay{
+	background-color: #00adee;
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	
+}
+@media (max-width: 967px) {
+    .next-project,
+    .prev-project{
+        bottom: 20px;
+    }
+	.center-icon {
+		width: 40px;
+		min-width: 20px;
+		max-width: 100px;
+		bottom: 20px;
+	}
+}
+@media (max-width: 767px) {
+    .prev-project-arrow,
+    .next-project-arrow{
+        padding: 5px;
+    }
+    .next-project,
+    .prev-project{
+        font-size: 16px;
+        bottom: 30px;
+    }
+    .prev-project{
+        left: 15px;
+    }
+    .next-project{
+        right: 15px;
+    }
+    .center-icon{
+        width: 40px;
+        max-width: 40px;
+        bottom: 10px;
+        margin-left: -3px;
+    }
+}
+@media (max-width: 479px) {
+    .testimonial-info p{
+        font-size: 14px;
+        margin-bottom: 25px;
+    }
+    .testimonial-info h3{
+        font-size: 16px;
+    }
+    .testimonial-info h2{
+        font-size: 24px;
+        margin-bottom: 15px;
+    }
+    .prev-project{
+        left: 15px;
+    }
+    .next-project{
+        right: 15px;
+    }
+}

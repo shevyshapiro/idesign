@@ -1,0 +1,147 @@
+﻿
+
+.side-logo{
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    width: 120px;
+    z-index: 100;
+}
+
+.menu{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    cursor: pointer;
+    z-index: 10;
+}
+.menuBar {
+    width: 35px;
+    height: 1px;
+    background-color: #fff;
+    margin: 9px 0;
+}
+.menuText{
+    font-size:18px;
+    color:#fff;
+    margin-right:5px;
+    margin-top: 2px;
+}
+.darkMenuText{
+    color:#444 !important;
+}
+.darkMenuBar{
+    background-color:#444 !important;
+}
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-image: url("../images/overlayImg.png");
+    background-repeat: repeat;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 60px;
+}
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.sidebar a {
+    padding: 20px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 20px;
+    color: #fff;
+    display: block;
+    transition: 0.3s;
+}
+
+.sidebar a:hover {
+    color:#0093ff;
+}
+html.touch .sidebar a:hover {
+    all:unset!important;
+}
+html.touch .sidebar a:hover {
+    pointer-events: none !important;
+}
+
+.sidebar .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+a.sub-menu {
+    font-size: 18px;
+    margin-left: 30px;
+    color: #cecece;
+    padding-top: 10px;
+}
+
+@media screen and (min-width:1600px){
+    .side-logo{ top: 65px; left: 80px; width: 170px;}
+    .menu{ top: 65px; right: 80px;}
+    .menuBar { width: 40px; height: 2px; margin: 10px 0;}
+    .menuText{ font-size:20px; margin-right:10px; margin-top: 5px; }
+}
+/* The general Design refers to the resolution of 1024px to 1599px */
+@media screen and (min-width:768px) and (max-width:1023px){
+    .side-logo{ top: 40px; left: 40px; width: 100px}
+    .menu{ top: 40px; right: 40px;}
+}
+
+@media screen and (min-width:480px) and (max-width:767px){
+    .side-logo{ top: 40px; left: 35px; width: 80px;}
+    .menu{ top: 15px; right: 35px;}
+}
+
+@media screen and (min-width:360px) and (max-width:479px){
+    .side-logo{ top: 33px; left: 20px; width: 65px;}
+    .menu{ top: 18px; right: 20px;}
+    .menuBar { width: 30px; height: 1px; margin: 7px 0;}
+    #menuText{ display: none; }
+}
+
+@media screen and (max-width:359px){
+    .side-logo{ top: 33px; left: 20px; width: 65px;}
+    .menu{ top: 18px; right: 20px;}
+    .menuBar { width: 30px; height: 1px; margin: 7px 0;}
+    #menuText{ display: none; }
+}
+.side-logo{
+    width: 45px;
+    top: 68px;
+}
+@media (max-width: 1599px) {
+    .side-logo{
+        width: 30px;
+        top: 33px;
+    }
+}
+@media (max-width: 1023px) {
+    .side-logo{
+        width: 25px;
+        top: 40px;
+    }
+}
+@media (max-width: 767px) {
+    .side-logo{
+        width: 20px;
+    }
+    .side-logo{
+        top: 20px;
+        left: 15px;
+    }
+    .menu{
+        right: 15px;
+    }
+}

@@ -1,0 +1,176 @@
+@CHARSET "ISO-8859-1";
+
+/* PAGE 1 STYLING*/
+
+#section0{
+	background-color: #fff;
+}
+.page1-overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	background-image: url('../images/w1360/kcg/back-1.jpg');
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+/*ENDS*/
+
+/* PAGE 2 STYLING*/
+
+#section1{
+	background-color: #fff;
+}
+/*ENDS*/
+
+/* PAGE 3 STYLING*/
+#section2{
+	background-color: #89d9f2;
+}
+.page3-overlay{
+	background-image: url('../images/w1360/kcg/back-3.jpg');
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+}
+/*ENDS*/
+
+/* PAGE 4 STYLING*/
+
+#section3{
+	background-color: #fff;
+}
+.page4-overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: url('../images/w1360/kcg/back-4.jpg');
+}
+/*ENDS*/
+
+/* PAGE 5 STYLING*/
+#section4{
+	background-color: #fff;
+}
+.page5-overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: url('../images/w1360/kcg/back-5.jpg');
+}
+/*ENDS*/
+
+/* PAGE 6 STYLING*/
+#section5{
+	background-color: #fff;
+}
+.page6-overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: url('../images/w1360/kcg/back-6.jpg');
+}
+/*ENDS*/
+
+
+/* PAGE 7 STYLING*/
+#section6{
+	background-color: #fff;
+}
+.page7-overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: url('../images/w1360/kcg/back-7.jpg');
+}
+/*ENDS*/
+
+
+/* PAGE 8 STYLING*/
+#section7{
+	background-color: #fff;
+}
+.page8-overlay{
+	position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+	background-repeat: no-repeat;
+	background-size: cover;
+	background-position: center;
+	background-image: url('../images/w1360/kcg/back-8.jpg');
+}
+/*ENDS*/
+
+
+/*New Styling Start Here
+==============================*/
+@media (max-width: 1600px) {
+	.page4-overlay{
+		background-position: 0 0;
+	}
+	
+}
+
+@media (max-width: 1023px) {
+	.page1-overlay{
+		background-position: 58% 0;
+	}
+	.page5-overlay{
+		background-image: url(../images/w1360/kcg/back-5-sm.jpg);
+	}
+	.page6-overlay{
+		background-position: 40% 0;
+	}
+	
+}
+@media (max-width: 780px) {
+	.page1-overlay{
+		background-image: url(../images/w1360/kcg/back-1-sm2.png);
+	}
+	.page4-overlay{
+		background-position: 80% 0;
+	}
+	
+}
+@media (max-width: 479px) {
+	
+}
+@media (max-height: 415px) {
+	
+}

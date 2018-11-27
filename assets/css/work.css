@@ -1,0 +1,163 @@
+
+/* categories list */
+#work-list {
+    margin:0 auto; /*center aligned*/
+    padding:0;
+    font-size:0; /* Remember to change it back to normal font size if have captions */
+    list-style:none;
+    background-color:#000;
+	    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+
+}
+#work-list li {
+    vertical-align:middle;
+    box-sizing:border-box;
+    margin:0;
+    padding:0;
+      -ms-flex: 0 0 33.33%;
+    flex: 0 0 33.33%;
+    max-width: 33.33%;
+}
+        
+/* The wrapper for each item */
+.list-cell {
+    /*margin:12px;
+    box-shadow:0 0 6px rgba(0,0,0,0.3);*/
+    display:block;
+    position: relative;
+    overflow:hidden;
+}
+        
+/* If have the image layer */
+.list-img {
+    display:block;
+    width: 100%;
+    height: auto;
+    border:none;
+    transform:scale(1);
+    transition:all 1s;
+}
+
+.work-item .buttons_with_border{
+	display: none;
+    padding: 0 30px;
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    width: 100%;
+    text-align: left;
+    top: 85%;
+}
+.work-item .buttons_with_border span{
+      color: #FFF;
+    font-size: 16px;
+    border: 2px solid white;
+    padding: 5px 10px;
+}
+
+#work-list li:hover .list-img {
+    transform:scale(1.05);
+}
+        
+.list-overlay {
+    position: absolute;
+    display:block;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    background-color: #00aeef;
+    opacity:0;
+    filter:alpha(opacity=0);/*For IE6 - IE8*/
+    transition:all 0.6s;
+}
+#work-list li:hover .list-overlay {
+    opacity:0.8;
+}
+
+.list-text {
+    display:block;
+    padding:0 30px;
+    box-sizing:border-box;
+    position:absolute;
+    left:0;
+    width:100%;
+    text-align:left;
+    top:65%;
+}
+.list-text h3{
+    font-size:30px;
+    font-weight:600;
+    transform:translateY(20px);
+    transition:all .3s;
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+}
+.list-text span{
+    display:block;
+    box-sizing:border-box;
+    font-size:20px;
+    font-weight:600;
+    transform:translateY(50px);
+    transition:all 1s;
+    color:white;
+    opacity:0;
+    filter:alpha(opacity=0);/*For older IE*/
+}
+#work-list li:hover .list-text h3,
+#work-list li:hover .list-text span{
+    transform:translateY(0px);
+    opacity:0.9;
+}
+
+#work-list li:hover .list-img {
+    transform:scale(1.05);
+}
+        
+@media (max-width: 1025px) {
+	.work-item .buttons_with_border{
+		display: block;
+	}
+	.list-text {
+		top:45%;
+	}
+}
+@media (max-width: 960px) {
+    .list-text {
+		font-size:20px;
+    }
+    #work-list li {
+      -ms-flex: 0 0 50%;
+		flex: 0 0 50%;
+		max-width: 50%;
+    }
+    .list-text {
+		font-size:30px;
+    }
+	#work-list{
+	  display:flex;
+	  flex-flow: column;
+		flex-wrap:wrap;
+		flex-direction:row;
+	}
+	
+}
+
+@media (max-width: 660px) {
+    .list-text {
+		font-size:14px;
+    }
+}
+
+@media (max-width: 550px) {
+    #work-list li {
+      -ms-flex: 0 0 100%;
+		flex: 0 0 100%;
+		max-width: 100%;
+    }
+}
