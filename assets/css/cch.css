@@ -210,6 +210,13 @@
     .page9-overlay{
     	background: url(../images/w1360/cch/back-9-sm.jpg) no-repeat center top;
     }
+	
+	img.full{
+		display:none;
+	}
+	img.small{
+		display:block;
+	}
 }
 @media (max-width: 559px) {
 	.page1-overlay,
@@ -256,4 +263,10 @@
     .page9-overlay{
     	background: url(../images/w1360/cch/back-9.jpg) no-repeat center top / cover;
     }
+	img.small{
+		display:none;
+	}
+	img.smaller{
+		display:block;
+	}
 }

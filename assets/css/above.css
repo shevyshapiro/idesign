@@ -153,6 +153,7 @@
 	background-position: center;
 	background-image: url('../images/w1360/above/back-9.jpg');
 }
+
 /*ENDS*/
 /*New Styling Start Here
 ==============================*/
@@ -176,6 +177,12 @@
 	.page9-overlay{
 		background-position: 20% 0;
 	}
+	img.full{
+		display:none;
+	}
+	img.small{
+		display:block;
+	}
 	
 }
 @media (max-width: 780px) {
@@ -184,6 +191,12 @@
 	}
 	.page7-overlay{
 		background-image: url(../images/w1360/above/back-6-sm3.png);
+	}
+	img.small{
+		display:none;
+	}
+	img.smaller{
+		display:block;
 	}
 	
 }

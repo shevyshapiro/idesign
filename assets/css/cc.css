@@ -136,11 +136,23 @@
 	.page7-overlay{
 		background-position: 20% 0;
 	}
+	img.full{
+		display:none;
+	}
+	img.small{
+		display:block;
+	}
 	
 }
 @media (max-width: 780px) {
 	.page3-overlay{
 		background-image: url(../images/w1360/cc/back-3-sm.png);
+	}
+	img.small{
+		display:none;
+	}
+	img.smaller{
+		display:block;
 	}
 	
 }

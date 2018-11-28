@@ -205,6 +205,12 @@
 		background: url(../images/w1360/scrubby/back-1-sm1.jpg) no-repeat center top / auto 100%;
 		background-position: 70% 0;
 	}
+	img.full{
+		display:none;
+	}
+	img.small{
+		display:block;
+	}
 	
 }
 
@@ -235,6 +241,12 @@
 	.page7-overlay{
 	  	background-position: 81% 0;
 	}
+	img.full{
+		display:none;
+	}
+	img.small{
+		display:block;
+	}
 }
 @media (max-width: 900px) {
 	.page1-overlay{
@@ -246,6 +258,12 @@
 	}
 	.page6-overlay{
 		background: url(../images/w1360/scrubby/back-6-sm.jpg) no-repeat center top / cover;
+	}
+	img.small{
+		display:none;
+	}
+	img.smaller{
+		display:block;
 	}
 }
 @media (max-width: 780px) {
@@ -279,5 +297,11 @@
 	}
 	.page9-overlay{
 		background: url(../images/w1360/scrubby/back-9.jpg) no-repeat right top / cover;
+	}
+	img.smaller{
+		display:none;
+	}
+	img.smallest{
+		display:block;
 	}
 }

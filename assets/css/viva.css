@@ -180,6 +180,12 @@
 	.page5-overlay{
 		background-position: 10% 0;
 	}
+	img.full{
+		display:none;
+	}
+	img.small{
+		display:block;
+	}
 }
 @media (max-width: 900px) {
 	.page5-overlay{
@@ -198,6 +204,12 @@
 	}
 	.page8-overlay{
 	  	background-position: 20% 0;
+	}
+	img.small{
+		display:none;
+	}
+	img.smaller{
+		display:block;
 	}
 }
 @media (max-width: 559px) {

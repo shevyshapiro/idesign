@@ -150,6 +150,12 @@
 	.page7-overlay{
 		background-position: 62% 0;
 	}
+	img.full{
+		display:none;
+	}
+	img.small{
+		display:block;
+	}
 	
 }
 @media (max-width: 767px) {

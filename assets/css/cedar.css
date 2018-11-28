@@ -244,6 +244,12 @@
     .page8-overlay{
     	background-image: url(../images/w1360/cedar/back-8-sm.jpg) ;
     }
+	img.full{
+		display:none;
+	}
+	img.small{
+		display:block;
+	}
 }
 @media (max-width: 559px) {
 	
@@ -291,4 +297,10 @@
     .page8-overlay{
     	background: url(../images/w1360/cedar/back-8.jpg) no-repeat center top / cover;
     }
+	img.small{
+		display:none;
+	}
+	img.smaller{
+		display:block;
+	}
 }

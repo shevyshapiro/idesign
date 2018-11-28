@@ -158,6 +158,12 @@
 		background-position: 40% 0;
 	}
 	
+	img.full{
+		display:none;
+	}
+	img.small{
+		display:block;
+	}
 }
 @media (max-width: 780px) {
 	.page1-overlay{
@@ -165,6 +171,12 @@
 	}
 	.page4-overlay{
 		background-position: 80% 0;
+	}
+	img.small{
+		display:none;
+	}
+	img.smaller{
+		display:block;
 	}
 	
 }

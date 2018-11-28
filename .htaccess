@@ -24,6 +24,7 @@ RewriteEngine On
 #RewriteCond %{HTTP_HOST} ^www.weridesign.com [NC]
 
 RewriteCond %{SERVER_PORT} 80 
+RewriteCond %{HTTP_HOST} !idesign.local
 RewriteRule ^(.*)$ https://weareidesign.com/$1 [R=301,L]
 
 RewriteCond %{HTTP_HOST} ^www.weareidesign.com [NC]
@@ -42,3 +43,13 @@ RewriteCond %{HTTP_HOST} ^www.idesignmg.com [NC]
 RewriteRule ^(.*)$ https://weareidesign.com/ [L,R=301,NC]
 
 #RedirectMatch  /assets/(.*)$ https://d1615xvjt23y87.cloudfront.net/assets/$1
+
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}.html -f
+RewriteRule ^(.+)$ $1.html [L,QSA]
+
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /.*\.html\ HTTP/
+RewriteRule ^(.*)\.html$ /$1 [R=301,L]
+
+ErrorDocument 404 /404.html

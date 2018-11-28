@@ -198,6 +198,12 @@
 	.page6-overlay{
 		background-image: url('../images/w1360/mist/back-6-sm.png');
 	}
+	img.full{
+		display:none;
+	}
+	img.small{
+		display:block;
+	}
 	
 }
 @media (max-width: 559px) {
