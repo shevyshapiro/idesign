@@ -142,6 +142,9 @@
 	img.small{
 		display:block;
 	}
+	.page-6-pic{
+		object-position: 20%;
+	}
 	
 }
 @media (max-width: 780px) {

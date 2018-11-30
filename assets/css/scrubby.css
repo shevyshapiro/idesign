@@ -247,6 +247,12 @@
 	img.small{
 		display:block;
 	}
+	img.page-1-pic{
+		object-position: 65%;
+	}
+	img.page-6-pic{
+		object-position: 85%;
+	}
 }
 @media (max-width: 900px) {
 	.page1-overlay{

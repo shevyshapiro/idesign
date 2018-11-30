@@ -250,6 +250,9 @@
 	img.small{
 		display:block;
 	}
+	.page-5-pic{
+		object-position: 70%;
+	}
 }
 @media (max-width: 559px) {
 	

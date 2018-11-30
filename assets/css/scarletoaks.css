@@ -126,6 +126,9 @@
 	.page5-overlay{
 		background-position: 5% 0;
 	}
+	.page-4-pic{
+		object-position: 0;
+	}
 	
 }
 @media (max-width: 767px) {

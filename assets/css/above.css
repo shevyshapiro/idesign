@@ -183,6 +183,9 @@
 	img.small{
 		display:block;
 	}
+	.page-8-pic{
+		object-position: 0;
+	}
 	
 }
 @media (max-width: 780px) {
@@ -198,9 +201,15 @@
 	img.smaller{
 		display:block;
 	}
+	.page-8-pic{
+		object-position: 30%;
+	}
 	
 }
 @media (max-width: 559px) {
+	.page-8-pic{
+		object-position: 20%;
+	}
 	
 }
 @media (max-width: 479px) {

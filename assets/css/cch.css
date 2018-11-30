@@ -185,6 +185,9 @@
 	.page7-overlay{
         background-position: 20% 0;
     }
+	.page-7-pic{
+		object-position: 80%;
+	}
 }
 @media (max-width: 800px) {
 	.left-content{
@@ -229,6 +232,9 @@
 	.page8-overlay,
 	.page9-overlay{
 		background-size: auto 100%;
+	}
+	.page-7-pic{
+		object-position: 75%;
 	}
 }
 @media (max-height: 415px) {
